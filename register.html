@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -34,14 +34,56 @@
     </header>
 
     <main>
-      <h1>INDBERET</h1>
+      <h1>Har du nogle gode råd?</h1>
       <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
+        <!-- <article id="form-info">
+          <h2>Har du nogle gode råd?</h2>
+        </article> -->
+
+        <form id="webform">
+          <div class="grid_1-1">
+            <div class="form-group">
+              <label for="del">Del din oplevelse her:</label>
+              <textarea name="del" id="del" rows="10" cols="20" placeholder="Hvad har du på hjerte?"></textarea>
+              <button>Send</button>
+            </div>
+            <div class="output">
+              <p>First name: <span id="del_output"></span></p>
+            </div>
+          </div>
+        </form>
+
+        <form id="webform2">
+          <div class="form-group">
+            <fieldset>
+              <legend><h2>Hvilken pandehårstype er den bedste?</h2></legend>
+
+              <label for="baby">
+                <input type="radio" id="baby" name="baby" />
+                Baby
+              </label>
+              <label for="micro">
+                <input type="radio" id="micro" name="micro" />
+                Micro
+              </label>
+            </fieldset>
+          </div>
+          <div class="form-group">
+            <label for="name">Navn</label>
+            <input type="text" id="name" name="name" required />
+            <p>First: <span class="first_output"></span></p>
+            <p class="error-message">Please enter a value</p>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+            <p class="error-message">Please enter a value</p>
+          </div>
+          <button>Send</button>
+        </form>
       </section>
+      <section></section>
+
       <section id="form-summary">
         <h2>Summary</h2>
         <article>
@@ -76,6 +118,6 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>

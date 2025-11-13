@@ -162,3 +162,19 @@ input {
 .error-message {
   display: none;
 }
+
+#webform .form-group label,
+#webform .output h2,
+legend h2 {
+  text-align: center;
+  background-color: var(--color-headline-bg);
+  color: var(--color-headline-text-page);
+  line-height: 2rem;
+}
+legend h2 {
+  padding: 0em 4em 0em 4em;
+}
+
+.output p {
+  padding: 1em;
+}

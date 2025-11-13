@@ -31,3 +31,25 @@ function handleSubmit(event) {
 }
 form.addEventListener("invalid", cancelPopup, true);
 form.addEventListener("submit", handleSubmit);
+
+// const form = document.querySelector("#webform");
+// const delTextarea = document.querySelector("#del");
+// const updatesContainer = document.querySelector("#updates-container");
+
+// form.addEventListener("submit", function (e) {
+//   e.preventDefault(); // forhindrer reload af siden
+
+//   const text = delTextarea.value.trim();
+//   if (text === "") return; // hvis feltet er tomt, gør ikke noget
+
+//   // Lav et nyt “opslag” element
+//   const newUpdate = document.createElement("div");
+//   newUpdate.classList.add("update-post");
+//   newUpdate.textContent = text;
+
+//   // Tilføj opslaget øverst (så nyeste kommer først)
+//   updatesContainer.prepend(newUpdate);
+
+//   // Nulstil textarea
+//   delTextarea.value = "";
+// });

@@ -12,44 +12,33 @@ function cancelPopup(event) {
   form.querySelector(":user-invalid").focus();
 }
 
-const form = document.querySelector("form");
+const form1 = document.querySelector("#webform");
 const delOutput = document.querySelector("#del_output");
 
-function handleSubmit(event) {
+function handleSubmit1(event) {
   event.preventDefault();
-
-  // 2. samle data op
-  const formData = new FormData(form);
-  const firstName = formData.get("del");
-
-  // 3. vise data
-  delOutput.textContent = firstName;
-
-  // 4. evt. nustil formular
-
-  form.reset();
+  const formData = new FormData(form1);
+  delOutput.textContent = formData.get("del");
+  form1.reset();
 }
-form.addEventListener("invalid", cancelPopup, true);
-form.addEventListener("submit", handleSubmit);
 
-// const form = document.querySelector("#webform");
-// const delTextarea = document.querySelector("#del");
-// const updatesContainer = document.querySelector("#updates-container");
+form1.addEventListener("submit", handleSubmit1);
 
-// form.addEventListener("submit", function (e) {
-//   e.preventDefault(); // forhindrer reload af siden
+// ---------- FORM 2 ----------
+const form2 = document.querySelector("#webform2");
+const navnOutput = document.querySelector("#navn_output");
+const emailOutput = document.querySelector("#email_output");
+const radioOutput = document.querySelector("#radio_output"); // du skal lave denne i HTML
 
-//   const text = delTextarea.value.trim();
-//   if (text === "") return; // hvis feltet er tomt, gør ikke noget
+function handleSubmit2(event) {
+  event.preventDefault();
+  const formData = new FormData(form2);
 
-//   // Lav et nyt “opslag” element
-//   const newUpdate = document.createElement("div");
-//   newUpdate.classList.add("update-post");
-//   newUpdate.textContent = text;
+  navnOutput.textContent = formData.get("name");
+  emailOutput.textContent = formData.get("email");
+  radioOutput.textContent = formData.get("bang"); // baby eller micro
 
-//   // Tilføj opslaget øverst (så nyeste kommer først)
-//   updatesContainer.prepend(newUpdate);
+  form2.reset();
+}
 
-//   // Nulstil textarea
-//   delTextarea.value = "";
-// });
+form2.addEventListener("submit", handleSubmit2);

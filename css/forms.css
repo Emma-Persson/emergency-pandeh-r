@@ -178,3 +178,10 @@ legend h2 {
 .output p {
   padding: 1em;
 }
+#webform2 fieldset label {
+  padding: 0.5em;
+}
+
+#webform ::placeholder {
+  padding: 0.5em;
+}

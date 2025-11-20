@@ -112,7 +112,8 @@ form {
   gap: 3px;
 }
 #webform,
-#webform2 {
+#webform2,
+#form-summary {
   background-color: rgb(255, 255, 255);
   padding: 1.5em;
   border-radius: 10px;
@@ -165,7 +166,8 @@ input {
 
 #webform .form-group label,
 #webform .output h2,
-legend h2 {
+legend h2,
+#form-summary h2 {
   text-align: center;
   background-color: var(--color-headline-bg);
   color: var(--color-headline-text-page);
@@ -175,7 +177,8 @@ legend h2 {
   padding: 0em 4em 0em 4em;
 }
 
-.output p {
+.output p,
+#form-summary p {
   padding: 1em;
 }
 #webform2 fieldset label {

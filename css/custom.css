@@ -1,6 +1,7 @@
 :root {
   /* Colours */
-  --color-bg: #fceb94; /* page background /*
+  --color-bg: #fceb94;
+  /* page background */
 
   /* Header */
   --color-head-bg: #ff4b00;
@@ -27,6 +28,7 @@
   --color-headline-text-page: #fffae2;
 
   /* Tekst */
+  --color-text1: #000000;
   --color-text: #000000;
   --color-text-inverted: #fffae2;
 
@@ -66,4 +68,26 @@
   --color-info-bg: #ffffff;
   --color-infobox-1-bg: #fceb94;
   --color-infobox-2-bg: #def5db;
+}
+
+html {
+  color-scheme: light;
+  --color-bg: #fceb94;
+}
+
+html.dark {
+  color-scheme: dark;
+  --color-bg: #707070;
+  --color-headline-bg: #fffae2;
+  --color-headline-text-page: #000000;
+  --color-text: #fffae2;
+  --color-text-inverted: #000000;
+  --color-card-bg: #272727;
+  --color-news-bg: #494949;
+  --color-news-bg-inverted: #272727;
+  --color-cta-newscard-bg: #7a5748;
+  --color-cta-newscard-bg-inverted: #3f4860;
+  --color-info-bg: #272727;
+  --color-infobox-1-bg: #777153;
+  --color-infobox-2-bg: #586556;
 }

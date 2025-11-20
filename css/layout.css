@@ -86,4 +86,10 @@ footer ul {
   footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  #main-disclamer img {
+    width: auto;
+    max-width: 300px;
+    height: 100%;
+    padding: 1.2em 0em 0em 1.2em;
+  }
 }

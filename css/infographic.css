@@ -44,11 +44,11 @@
 
 /* svg */
 .info-graphic #hotspot1:hover {
-  filter: brightness(140%);
+  filter: drop-shadow(0 0 5px rgba(255, 166, 128, 1));
 }
 .info-graphic #hotspot2:hover {
-  filter: brightness(140%);
+  filter: drop-shadow(0 0 5px rgba(255, 166, 128, 1));
 }
 .info-graphic #hotspot3:hover {
-  filter: brightness(140%);
+  filter: drop-shadow(0 0 5px rgba(255, 166, 128, 1));
 }

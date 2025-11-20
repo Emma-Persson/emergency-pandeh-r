@@ -16,12 +16,16 @@
   </head>
   <body id="frontpage">
     <header>
+      <label>
+        <input id="theme-toggle" role="switch" type="checkbox" />
+      </label>
+      <!-- <button id="toggle">Dark Mode</button> -->
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"> <img src="img/logo4.svg" alt="" /> </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+          <li><a class="menuItem" href="instruction.html">Pandehårs SOS </a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
         </ul>
         <button class="burger">
@@ -33,56 +37,122 @@
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
+        <img src="img/ildtæt.png" alt="ICON" />
         <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
+          <h1>Pandehår i panik?</h1>
+          <p class="sub">
+            Velkommen til det officielle Pandehårsberedskab — stedet du kan ty til, når spejlbilledet siger “katastrofe”, og dit pandehår siger “jeg gør hvad jeg vil”. Her finder du akutte tips, hurtige redningsmanøvrer og moralsk støtte, når din
+            frisure opfører sig som en lille tornado har været forbi. Træk vejret. Du er ikke alene. Hjælpen er kun et klik væk.
+          </p>
         </div>
       </div>
     </section>
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/info-grafik2.svg" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <h2>Pandehårskrise! Hvad gør du?</h2>
+            <p>Bare rolig – du er ikke alene! Her kan du udforske de mest geniale måder at redde enhver pandehårs-katastrofe på. Tryk dig rundt, bliv klogere, og find den løsning, der får din pandehårskrise tilbage på rette spor!</p>
+            <a href="instruction.html" class="cta_btn">Se mere her</a>
           </div>
         </article>
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/formular.png" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>Har du været ude i en pandehårs-nødsituation?</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              Vi vil høre alt om det! Del dine bedste (eller værste) historier om pandehår, skæve klip, spontane klip-det-selv øjeblikke eller mirakuløse redninger. Fortæl os også, hvilken type pandehår du synes er den ultimativt bedste – måske kan
+              du hjælpe andre i nød!
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <a href="register.html" class="cta_btn">Se mere her</a>
           </div>
         </article>
       </section>
       <section id="breaking">
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Sådan får du den perfekte “Bang” med Dyson Airwrap</h3>
+          <p>“Det føles som at have en stylist derhjemme”</p>
+          <img src="img/dyson.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="popup3">Læs mere</button>
+          <div popover id="popup3">
+            <h2>Sådan får du den perfekte “bang” med Dyson Airwrap</h2>
+            <img src="img/dyson.png" alt="news_img" />
+            <p>
+              Der er noget uimodståeligt ved et velstylet pandehår. Det rammer ansigtet, indfanger lyset – og kan på magisk vis få dig til at se både cool og ubesværet ud på én gang. Men bag hvert perfekt “bang” gemmer der sig ofte utallige forsøg
+              foran spejlet… med føntørrer, rundbørste og et håb. Indtil Dyson Airwrap kom og reddede dagen (og pandehåret).
+            </p>
+            <p>
+              Airwrap’en er blevet en gamechanger i hårverdenen – og med god grund. Takket være Dysons banebrydende Coanda-effekt bruger den luft, ikke ekstrem varme, til at style håret. Det betyder, at du kan forme, løfte og tæmme dit pandehår uden
+              at skade det – og stadig få den der glansfulde, bevægelige finish, som ellers kun frisøren kan trylle frem. “Det føles som at have en stylist derhjemme,” siger en bruger begejstret. “Jeg kan lave mit pandehår på fem minutter – og det
+              holder hele dagen.”
+            </p>
+            <p>
+              Airwrap’en gør det let at skabe præcis den stil, du vil have: luftige curtain bangs, et glat 60’er-inspireret look eller små, buede lokker, der rammer ansigtet perfekt. De forskellige børstehoveder giver dig total kontrol – uanset om du
+              vil have volumen, struktur eller bare lidt løft. Og så er der den ubestridte bonus: det føles luksuriøst. Fra det elegante design til den stille, præcise luftstrøm – alt ved Dyson Airwrap signalerer “jeg har styr på mit hår (og mit
+              liv)”. Så næste gang pandehåret ikke vil samarbejde, så husk: det handler ikke om held, det handler om teknologi.
+            </p>
+            <p>Dyson Airwrap – fordi et godt pandehår fortjener intelligent styling.</p>
+          </div>
+        </article>
+
+        <article class="news_card">
+          <h3>De kendtes pandehår: Sabrina Carpenter afslører hemmeligheden bag sit ikoniske “bang”</h3>
+
+          <p><em>“I’m Sabrina Carpenter, and I know a thing or two about a great bang. In fact, I think we all deserve a better bang”</em></p>
+          <img src="img/sabrina_c.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="popup2">Læs mere</button>
+          <div popover id="popup2">
+            <h2>De kendtes pandehår: Sabrina Carpenter afslører hemmeligheden bag sit ikoniske “bang”</h2>
+            <img src="img/sabrina_c.png" alt="news_img" />
+            <p>
+              Der er pandehår – og så er der Sabrina Carpenters pandehår. Den amerikanske sangerinde og popstjerne har gjort sit signaturlook til et globalt samtaleemne (og et uundgåeligt referencebillede hos frisøren). Men hvad er hemmeligheden bag
+              de perfekte, luftige lokker, der altid sidder lige til TikTok-kameraet?
+            </p>
+            <p>
+              “I’m Sabrina Carpenter, and I know a thing or two about a great bang,” siger hun med sit karakteristiske glimt i øjet i sin kampagne for Redken. “In fact, I think we all deserve a better bang”. For Sabrina handler det ikke kun om hår —
+              men om holdning. “Pandehår er som et godt pophook,” forklarer hun. “Det kræver lidt vedligeholdelse, men når det sidder, så sidder det!”
+            </p>
+            <p>
+              Sangerinden har slået sig sammen med hårplejegiganten Redken for at skabe de perfekte betingelser for glansfuldt, bevægeligt hår, der aldrig mister formen – selv efter en svedig koncert eller en maraton på dansegulvet. Hendes trick? En
+              blanding af Redkens Acidic Bonding Concentrate til styrke og fugt – og en smule attitude. “Mit hår har set lidt af hvert,” griner Sabrina. “Men jeg har lært, at et godt produkt og et godt grin kan redde enhver bad bang day.” Så næste
+              gang du overvejer at klippe pandehår, så husk: du behøver ikke være popstjerne for at få det til at se sådan ud — men det skader heller ikke.
+            </p>
+          </div>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Hvad er pandehårets største fjende?: Blæst vs. regn</h3>
+          <p>Der er få ting, der kan ødelægge en ellers perfekt dag, som det øjeblik, hvor dit pandehår beslutter sig for at opføre sig som en uartig teenager.</p>
+          <img src="img/vejr2.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="popup">Læs mere</button>
+          <div popover id="popup">
+            <h2>Pandehårets største fjende: Blæst vs. regn</h2>
+            <img src="img/vejr2.png" alt="news_img" />
+            <p>
+              Der er få ting, der kan ødelægge en ellers perfekt dag, som det øjeblik, hvor dit pandehår beslutter sig for at opføre sig som en uartig teenager. Og bag denne daglige tragedie står to ærkefjender, der kæmper en evig kamp om at ødelægge
+              din frisure: blæsten og regnen. Men hvem er egentlig værst? Lad os tage kampen op, hvor den hører hjemme – i den daglige kamp for at bevare værdigheden.
+            </p>
+            <p>
+              Blæsten: Den usynlige fjende, der river i dit selvværd Blæsten er som den irriterende kollega, der altid dukker op, når du mindst ventede det. Den kommer pludselig, og før du ved af det, står dit pandehår på enden som en gruppe
+              forvirrede soldater, der lige har fået ordre om at angribe i alle retninger. Det er ikke bare et æstetisk problem – det er et fysisk angreb på din værdighed. Blæsten gnider dit hår mod luften, og pludselig står hvert enkelt hårstrå på
+              enden, som om du har stikket fingrene i en stikkontakt. Den har ingen respekt for din frisures naturlige retning. Den blæser dit pandehår op, ned, til siden – eller bare helt væk, så du ender med at se ud, som om du lige er steget ud af
+              en vindtunnel. Og det værste? Blæsten tørrer dit hår ud, gør det skørt og mere modtageligt for knæk. Det er som om, den ikke bare vil ødelægge din frisure, men også din hårs sundhed på lang sigt. Frisør og hår-ekspert Lone Larsen siger
+              det bedst: ”Blæst er som en dårlig ekskærest – den river i dig, efterlader dig forvirret, og du ender med at se ud, som om du har kæmpet med en bjørn.”
+            </p>
+            <p>
+              Regnen: Den klamme sabotør, der lover skønhed men leverer kaos Regnen er den falske ven, der lover at gøre dit hår blødt og skinnende, men i stedet efterlader det fladt, klamt og som om du har badet i olie. Den kommer snigende, ofte når
+              du mindst ventede det, og før du ved af det, er dit pandehår blevet til en tung, våd klump, der hænger som en våd serviet over din pande. Regnens største forræderi er fugtigheden. Den gør dit hår tungt, så pandehåret falder fladt ned
+              over panden – eller klæber sig fast som en desperat klammeron. Selv den bedste hårspray kan ikke modstå en byge. Regnen gør dit hår til en klump, der enten hænger som en våd puddel eller krøller sig som en fuglerede. Og når du endelig
+              kommer ind, tager det evigheder at tørre, og i mellemtiden ser du ud, som om du har tabt en kamp mod en vandkanon. Stylist og blogger Mikkel Madsen udtrykker det sådan: ”Regn er som en dårlig date – den lover noget godt, men ender med
+              at ødelægge alt, og du sidder tilbage med en klump i håret og en følelse af at være blevet snydt.”
+            </p>
+            <p>
+              Hvem vinder så? Så, hvem er egentlig pandehårets største fjende? Det kommer an på, hvad du hader mest. Blæsten ødelægger din frisure med stil – eller rettere, mangel på samme – og efterlader dig med et look, der skriger ”jeg har kæmpet
+              mod naturens kræfter!” Regnen, derimod, ødelægger din frisure med klamhed og efterlader dig med et look, der skriger ”jeg har glemt min paraply – igen!” Det er som at vælge mellem pest og kolera, eller mellem at blive slået ned af en
+              storm eller druknet i en byge. Blæsten er måske den mest dramatiske fjende, men regnen er den mest forræderiske. Så hvem er værst? Svaret er simpelt: Det er den, du møder, når du har glemt både hat og paraply. Bonus-tip: Invester i en
+              god hat, hårspray med ekstra hold, og lær at elske det kaotiske look. Ellers kan du bare flytte til et sted uden vejr – eller acceptere, at dit pandehår nogle gange har sin egen vilje.
+            </p>
+          </div>
         </article>
       </section>
     </main>
@@ -114,6 +184,7 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/darkmode.js"></script>
   </body>
 </html>

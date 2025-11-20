@@ -17,6 +17,7 @@
   color: var(--color-headline-text-page);
   margin-bottom: 1rem;
 }
+
 .info-text h3 {
   font-size: 0.8rem;
   line-height: 0.8rem;
@@ -39,4 +40,15 @@
 }
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
+}
+
+/* svg */
+.info-graphic #hotspot1:hover {
+  filter: drop-shadow(0 0 5px rgba(255, 166, 128, 1));
+}
+.info-graphic #hotspot2:hover {
+  filter: drop-shadow(0 0 5px rgba(255, 166, 128, 1));
+}
+.info-graphic #hotspot3:hover {
+  filter: drop-shadow(0 0 5px rgba(255, 166, 128, 1));
 }

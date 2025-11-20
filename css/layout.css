@@ -60,6 +60,11 @@ footer ul {
   gap: 0;
 }
 
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 @media (width > 600px) {
   #frontpage > main {
     grid-template-columns: 6fr 3fr;
@@ -80,5 +85,11 @@ footer ul {
   }
   footer {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  #main-disclamer img {
+    width: auto;
+    max-width: 300px;
+    height: 100%;
+    padding: 1.2em 0em 0em 1.2em;
   }
 }

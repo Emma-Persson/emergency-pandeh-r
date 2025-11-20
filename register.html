@@ -11,18 +11,22 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
   <body id="register">
     <header>
+      <label>
+        <input id="theme-toggle" role="switch" type="checkbox" />
+      </label>
+      <!-- <button id="toggle">Dark Mode</button> -->
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"> <img src="img/logo4.svg" alt="" /> </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+          <li><a class="menuItem" href="instruction.html">Pandehårs SOS </a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
         </ul>
         <button class="burger">
@@ -34,19 +38,62 @@
     </header>
 
     <main>
-      <h1>INDBERET</h1>
+      <h1>Har du nogle gode råd?</h1>
       <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
+        <!-- <article id="form-info">
+          <h2>Har du nogle gode råd?</h2>
+        </article> -->
+
+        <form id="webform">
+          <div class="grid_1-1">
+            <div class="form-group">
+              <label for="del"> Del din oplevelse her:</label>
+              <textarea name="del" id="del" rows="10" cols="20" placeholder="Hvad har du på hjerte?"></textarea>
+              <button>Send</button>
+            </div>
+            <div class="output">
+              <h2>Updates:</h2>
+              <p><span id="del_output"></span></p>
+            </div>
+          </div>
+        </form>
+
+        <form id="webform2">
+          <div class="form-group">
+            <fieldset>
+              <legend><h2>Hvilken pandehårstype er den bedste?</h2></legend>
+
+              <label for="baby">
+                <input type="radio" id="baby" name="bang" value="Baby" />
+                Baby
+              </label>
+              <label for="micro">
+                <input type="radio" id="micro" name="bang" value="Micro" />
+                Micro
+              </label>
+            </fieldset>
+          </div>
+          <div class="form-group">
+            <label for="name">Navn</label>
+            <input type="text" id="name" name="name" required />
+            <p class="error-message">Please enter a value</p>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+            <p class="error-message">Please enter a value</p>
+          </div>
+          <button>Send</button>
+        </form>
       </section>
+
       <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
+        <div class="output">
+          <h2>Summary</h2>
+          <p>Navn: <span id="navn_output"></span></p>
+          <p>Email: <span id="email_output"></span></p>
+          <p>Pandehårstype: <span id="radio_output"></span></p>
+        </div>
       </section>
     </main>
     <footer>
@@ -76,6 +123,7 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/darkmode.js"></script>
   </body>
 </html>

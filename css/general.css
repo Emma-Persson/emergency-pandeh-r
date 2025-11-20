@@ -164,11 +164,61 @@ footer a {
 #popup1 img {
   padding: 0.5em 2em 0.5em 2em;
 }
-header button {
+/* header button {
   margin: 0.5em;
 }
 #toggle {
   display: flex;
   margin-left: auto;
   text-align: right;
+} */
+html {
+  color-scheme: ligth;
+
+  &.dark {
+    color-scheme: dark;
+  }
+}
+
+header label {
+  display: flex;
+
+  margin: 0.5em;
+}
+
+[role="switch"] {
+  --h: 2rem;
+  --w: 3rem;
+  font: inherit;
+  margin-left: auto;
+  text-align: right;
+  appearance: none;
+  background: gainsboro;
+  height: var(--h);
+  width: var(--w);
+  border: 1px solid #000;
+  cursor: pointer;
+  border-radius: 9999px;
+}
+
+[role="switch"]::before {
+  content: "";
+  display: block;
+  padding: 3px;
+  height: 100%;
+  aspect-ratio: 1/1;
+  background: gray content-box;
+  border-radius: inherit;
+  transition: 0.3s;
+}
+
+[role="switch"]:checked::before {
+  background-color: #ffa680;
+  translate: calc(var(--w) - var(--h));
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
 }

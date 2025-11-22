@@ -164,14 +164,7 @@ footer a {
 #popup1 img {
   padding: 0.5em 2em 0.5em 2em;
 }
-/* header button {
-  margin: 0.5em;
-}
-#toggle {
-  display: flex;
-  margin-left: auto;
-  text-align: right;
-} */
+
 html {
   color-scheme: ligth;
 
@@ -221,4 +214,10 @@ header label {
 ::before,
 ::after {
   box-sizing: border-box;
+}
+
+html.dark #webform,
+html.dark #webform2,
+html.dark #form-summary {
+  background: var(--color-news-bg);
 }
